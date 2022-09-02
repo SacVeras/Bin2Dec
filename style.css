@@ -1,0 +1,155 @@
+*{box-sizing: border-box;}
+
+:root {
+    --border-Color: #D1D1D1;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F43036;
+    position: relative;
+}
+
+
+.geral_container {
+    width: 450px;
+}
+
+.container {
+    width: 100%;
+    height: 300px;
+    border: 2px solid var(--border-Color);
+    background-color: #fff;
+    padding: 10px 50px;
+    border-radius: 0 15px 15px 15px;
+}
+
+.cont_abas {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    gap: 2px;
+    user-select: none;
+}
+
+.abas{
+    width: 130px;
+    height: 100%;
+    border: 2px solid var(--border-Color);
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    background-color: var(--border-Color);
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+
+.actived{
+    background-color: #fff;
+}
+
+
+.actived::after{
+    content: '';
+    display: inline-block;
+    width: 126px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -3px;
+}
+
+#elements{
+    display: flex;
+    flex-direction: column;
+}
+
+#elements > h2 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#elements > label {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#elements > label > input {
+    width: 250px;
+    height: 25px;
+
+    background-color: #D1D1D1;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+#elements > label > input:focus {
+    background-color: #A2A2A2;
+}
+
+#elements > input{
+    width: 100%;
+    height: 35px;
+    margin-top: 20px;
+    background-color: #5656FF;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.2s;
+}
+
+#elements > input:hover {
+    background-color: #2929a1;
+    color: #B9B9B9;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 17%);
+    position: absolute;
+    bottom: 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.social_midias {
+    display: flex;
+    gap: 10px;
+}
+
+.social_midias > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social_midias > a:hover {
+    text-decoration: underline;
+}
+
+.credits {
+    color: #4A0406;
+}
